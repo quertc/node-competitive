@@ -21,5 +21,6 @@ process.stdin.on('data', inputStdin => {
 
 process.stdin.on('end', () => {
   inputString = inputString.split(EOL).map(str => str.trim());
+
   main();
 });
